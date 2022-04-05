@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#4F575B"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#4F575B"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageButton
+            android:id="@+id/but"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+
+            android:backgroundTint="#4F575B"
+            android:fontFamily="serif"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="100dp"
+            tools:layout_conversion_absoluteWidth="100dp" />
+
+        <ImageButton
+            android:id="@+id/button"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="400dp"
+            android:background="#4F575B"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_3"
+            app:layout_constraintBottom_toTopOf="@+id/danger"
+            app:layout_constraintEnd_toStartOf="@+id/button2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="100dp"
+            tools:layout_conversion_absoluteWidth="100dp" />
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginEnd="26dp"
+            android:background="#4F575B"
+            android:scaleType="fitXY"
+            android:src="@drawable/img4"
+
+
+            app:layout_constraintBottom_toTopOf="@+id/accident"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="100dp"
+            tools:layout_conversion_absoluteWidth="100dp" />
+
+        <ImageButton
+            android:id="@+id/danger"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+
+
+            android:background="#4F575B"
+            android:scaleType="fitXY"
+            android:src="@drawable/img2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/accident"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            tools:layout_conversion_absoluteHeight="50dp"
+            tools:layout_conversion_absoluteWidth="236dp" />
+
+        <ImageButton
+            android:id="@+id/accident"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="5dp"
+
+            android:background="#4F575B"
+            android:scaleType="fitXY"
+            android:src="@drawable/img3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/danger"
+            app:layout_constraintTop_toBottomOf="@+id/button2"
+            tools:layout_conversion_absoluteHeight="50dp"
+            tools:layout_conversion_absoluteWidth="256dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
